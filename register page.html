@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup - Ai Jurist </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Jurist - Your Trusted Legal Advisor</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/smartphone.png" rel="icon">
+  <link href="assets/img/smartphone.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oxygen+Mono&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 625px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 80px;
+    font-family: 'Poppins' sans-serif;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
+
+.inputbox{
+    position: relative;
+    margin: 40px 0;
+    width: 310px;
+    border-bottom: 2px solid #ffffff;
+    margin-left: 40px;
+    background: transparent;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 18%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: top 0.3s ease;
+    }
+input:focus ~ label,
+input:valid ~ label{
+    top: -0.2rem;
+}
+.inputbox input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 25px 35px 5px 5px;
+    color: #ffffff;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 1000px  inset !important;
+    background: transparent !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #ffffff;
+    font-size: 1.2em;
+    top: 10px;
+}
+.forget{
+    margin: -12px 0 12px;
+    font-size: .9em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 60%;
+    height: 40px;
+    border-radius: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.register{
+    font-size: .9em;
+    color: #ffffff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.agrees{
+    display: flex;
+    margin-left: 40px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+            position: relative;
+            top: 3px;
+        }
+#iframeContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+.h1{
+    font-family: 'Oxygen mono', monospace;
+}
+    </style>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1><a href="index.html">AI Jurist</a></h1>
+        <!-- Uncomment to use image logo -->
+        <!--<a href="index.html"><img src="assets/img/smartphone.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.html">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="dropdown"><a href="#"><span>Navigate</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Product</a></li>
+              <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Predict Your Case</a></li>
+                  <li><a href="#">API Key</a></li>
+                  <li><a href="#">Waitlist</a></li>
+                </ul>
+              </li>
+              <li><a href="termscondition.html">Terms and Conditions</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href = "register page.html">Sign Up</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+    <section>
+        <!--<div class="video-wrapper">
+            <video id="background-video" autoplay loop muted>
+              <source src="assets/vid/_MotionFlow24308_FPpreview.mp4" type="video/mp4">
+            </video>
+          </div>-->
+          <div id="iframeContainer">
+            <iframe src="bg.html" frameborder="0"></iframe>
+        </div>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/register" method="post">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" name="username" autocomplete="off" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" autocomplete="off" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="confirm_password" required>
+                        <label for="">Confirm Password</label>
+                    </div>
+                    <div class="agrees">
+                        <input type="checkbox" id="agreeCheckbox" required>
+                        <label for="agreeCheckbox">
+                            I agree to the <a href="termscondition.html" target="_blank">Terms and Conditions</a> and <a href="privacypolicy.html" target="_blank">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <button type="submit">Register</button>
+                    <div class="register">
+                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
