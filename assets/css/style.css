@@ -214,8 +214,8 @@ section {
 }
 .step:hover,
 .step:focus {
-  box-shadow: 0 -3px 10px 5px rgba(225, 225, 225, 0.3);
-  transform: translateY(0.35em);
+  box-shadow: 0 -3px 10px 5px rgba(255, 255, 255, 0.445);
+  transform: translateY(0.45em);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
