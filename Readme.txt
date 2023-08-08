@@ -21,5 +21,5 @@ I want to express our gratitude to the following tools, resources, and communiti
 - [CodePen](https://codepen.io/): For offering helpful code snippets and inspiration for various design elements.
 - [Kaggle](https://www.kaggle.com/): For providing the valuable legal case dataset used in training our AI models.
 - [Gretel.ai](https://gretel.ai/): For generating synthetic data that enriched our dataset and contributed to improved accuracy.
-- [ChatGPT](chat.openai.com): For helping debug the code and giving various methods and suggesting appropriate changes.
+- [ChatGPT](https://chat.openai.com): For helping debug the code and giving various methods and suggesting appropriate changes.
 
