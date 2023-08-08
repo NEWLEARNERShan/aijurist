@@ -14,7 +14,6 @@ Welcome to the AI Jurist website! This website is designed to provide you with a
 
 I want to express our gratitude to the following tools, resources, and communities that played a crucial role in making this website possible:
 
-- [Bootstrap](https://getbootstrap.com/): For providing the responsive and user-friendly design framework.
 - [Nicepage](https://nicepage.com/): For assisting in designing visually appealing and professional web pages.
 - [Particle.js](https://vincentgarreau.com/particles.js/): For adding interactive and dynamic particle animations to enhance the user experience
 - [Vanta.js](https://www.vantajs.com/): For creating the mesmerizing 3D background that adds a captivating visual element to our website..
