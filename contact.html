@@ -143,10 +143,18 @@
                   <textarea class="form-control" name="message" required></textarea>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="submit" class="btn btn-primary d-block w-100" value="Send Message">
+                  <input type="submit" class="btn btn-primary d-block w-100" value="Send Message" onclick="openPopup()">
+                  <div class="popup" id="popup">
+                    <img src="assets/img/tick.png">
+                    <h2>Thank You!</h2>
+                    <p>You will be redirected to formsubmit.co. Don't worry, your form will be submitted and you will recieve an response ASAP!</p>
+                    <button type="button" onclick="closePopup()">Ok</button>
+                  </div>
                 </div>
               </div>
-
+              <input type="hidden" name="_autoresponse" value="We have received your form. We'll get back to you soon. If you have any further questions or concerns, please feel free to reply to this email. 
+              Best regards, 
+              AI Jurist Team">
             </form>
           </div>
 
@@ -274,6 +282,28 @@ VANTA.DOTS({
     document.getElementById("message").value = "";
   }
 </script>
+<script>
+  let popup = document.getElementById("popup");
+  
+  function openPopup() {
+    // Check if all required fields are filled
+    let nameField = document.getElementById("name");
+    let emailField = document.getElementById("email");
+    let subjectField = document.getElementById("subject");
+    let messageField = document.getElementById("message");
+
+    if (nameField.value && emailField.value && subjectField.value && messageField.value) {
+      popup.classList.add("open-popup");
+    } else {
+      alert("Please fill in all required fields before submitting.");
+    }
+  }
+
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }
+</script>
+
 </body>
 
 </html>
