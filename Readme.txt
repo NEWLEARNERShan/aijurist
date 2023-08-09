@@ -12,7 +12,7 @@ Welcome to the AI Jurist website! This website is designed to provide you with a
 
 ## Credits
 
-I want to express our gratitude to the following tools, resources, and communities that played a crucial role in making this website possible:
+I want to express my gratitude to the following tools, resources, and communities that played a crucial role in making this website possible:
 
 - [Nicepage](https://nicepage.com/): For assisting in designing visually appealing and professional web pages.
 - [Particle.js](https://vincentgarreau.com/particles.js/): For adding interactive and dynamic particle animations to enhance the user experience
