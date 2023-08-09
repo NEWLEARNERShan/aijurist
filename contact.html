@@ -123,7 +123,7 @@
           </div>
 
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-            <form action="https://formsubmit.co/f54c3aa4c19e97299151545137c9bf9d" method = "post">
+            <form action="https://formsubmit.co/f54c3aa4c19e97299151545137c9bf9d" target="blank" method = "post">
               <input type="hidden" name="_next" value="https://aijurist.github.io/aijurist/">
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -143,12 +143,12 @@
                   <textarea class="form-control" name="message" required></textarea>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="submit" class="btn btn-primary d-block w-100" value="Send Message" onclick="openPopup()">
+                  <input type="submit" class="btn btn-primary d-block w-100" value="Send Message" onclick="openPopup(event)">
                   <div class="popup" id="popup">
                     <img src="assets/img/tick.png">
                     <h2>Thank You!</h2>
-                    <p>You will be redirected to formsubmit.co. Don't worry, your form will be submitted and you will recieve an response ASAP!</p>
-                    <button type="button" onclick="closePopup()">Ok</button>
+                    <p>You will be redirected to formsubmit.co in <span id="timer">5</span> seconds. Don't worry, your form will be submitted and you will recieve an response ASAP!</p>
+                    <button type="button" onclick="closePopup(event)">Ok</button>
                   </div>
                 </div>
               </div>
@@ -233,6 +233,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
 <script>
+  //Vanta js animation
 VANTA.DOTS({
   el: "#contact.hero-section.inner-page",
   mouseControls: true,
@@ -251,8 +252,10 @@ VANTA.DOTS({
   gyroControlsSensitivity: 1.2
 })
 </script>
+
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
+  //Clearing the contact form by using secure token
   function sendEmail(){
     Email.send({
     SecureToken: "160e78dc-58d2-44d5-a84c-1c0820313d8c",
@@ -283,24 +286,52 @@ VANTA.DOTS({
   }
 </script>
 <script>
+  //Popup function(contact form)
   let popup = document.getElementById("popup");
-  
-  function openPopup() {
-    // Check if all required fields are filled
+  let redirectTimer;
+
+  function openPopup(event) {
+    event.preventDefault();
     let nameField = document.getElementById("name");
     let emailField = document.getElementById("email");
     let subjectField = document.getElementById("subject");
-    let messageField = document.getElementById("message");
+    let messageField = document.querySelector('textarea[name="message"]');
 
-    if (nameField.value && emailField.value && subjectField.value && messageField.value) {
+    if (nameField.value && emailField.value && subjectField.value && messageField.value.trim() !== "") {
       popup.classList.add("open-popup");
+      startCountdown(5);
+      setTimeout(submitForm, 5000);
     } else {
       alert("Please fill in all required fields before submitting.");
     }
   }
 
+  function startCountdown(seconds) {
+    let timerElement = document.getElementById("timer");
+    let remainingSeconds = seconds;
+
+    function updateTimer() {
+      timerElement.textContent = remainingSeconds;
+      remainingSeconds--;
+
+      if (remainingSeconds < 0) {
+        clearTimeout(countdownInterval);
+        closePopup();
+        return;
+      }
+    }
+    updateTimer();
+    let countdownInterval = setInterval(updateTimer, 1000);
+  }
+
+  function submitForm() {
+    document.querySelector("form").submit(); 
+  }
+
   function closePopup() {
     popup.classList.remove("open-popup");
+
+    clearTimeout(redirectTimer);
   }
 </script>
 

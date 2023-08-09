@@ -153,6 +153,7 @@ section {
 }
 
 .btn.btn-primary {
+  margin-top: 10px;
   background: #2d71a1;
   background: linear-gradient(-45deg, #282828, #464646);
   color: #fff;
@@ -257,7 +258,7 @@ section {
 }
 .step:hover,
 .step:focus {
-  box-shadow: 0 -3px 10px 5px rgba(255, 255, 255, 0.445);
+  box-shadow: 0 -3px 10px 5px rgba(187, 187, 187, 0.445);
   transform: translateY(0.45em);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
