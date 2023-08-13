@@ -1,16 +1,16 @@
-# AI Jurist Website - Readme
+AI Jurist Website - Readme
 
-## About the Website
+About the Website
 
 Welcome to the AI Jurist website! This website is designed to provide you with a seamless and efficient way to explore the potential outcomes of your legal cases using advanced AI technology. Our platform offers predictive analysis, similar case recommendations, and other valuable features to enhance your legal decision-making process.
 
-### Features
+Features
 
 - Predictive Analysis: Gain insights into the potential success of your court cases using our AI-driven predictions.
 - Similar Case Recommendations: Discover relevant legal cases that share similarities with yours, aiding in research and strategy formulation.
 - Efficient Data Management: Our platform is powered by a comprehensive dataset from various sources, including Kaggle.
 
-## Credits
+Credits
 
 I want to express my gratitude to the following tools, resources, and communities that played a crucial role in making this website possible:
 
