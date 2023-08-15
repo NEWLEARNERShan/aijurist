@@ -3,6 +3,7 @@
 }
 
 .containerfaq {
+  font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   padding: 4rem;
   width: auto;
@@ -100,4 +101,54 @@
   font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
+}
+
+@media (max-width: 768px) {
+  .containerfaq {
+    padding: 1rem;
+  }
+
+  .accordion button {
+    font-size: 1rem;
+  }
+
+  .accordion button .icon {
+    top: 14px;
+  }
+
+  .accordion .accordion-content {
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+
+  .accordion button[aria-expanded="true"] + .accordion-content {
+    padding-bottom: 0.2em; 
+  }
+
+  .accordion button[aria-expanded="true"] + .accordion-content::after {
+    content: "";
+    display: block;
+    height: auto;
+  }
+
+  .accordion button[aria-expanded="true"] + .accordion-content + .accordion-item button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    text-align: left;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffffff;
+  }
 }/*# sourceMappingURL=faqs.css.map */

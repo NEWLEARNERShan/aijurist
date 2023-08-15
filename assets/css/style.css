@@ -2,12 +2,13 @@
 # General
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oxygen+Mono&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway&family=Roboto:wght@100&display=swap");
 html {
   overflow-x: hidden;
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #9fa1a4;
   line-height: 1.5;
   font-size: medium;
@@ -42,7 +43,7 @@ h6,
 
 h2,
 .mb-5{
-  font-family: 'Oxygen Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color: #ffffff;
 }
@@ -265,6 +266,7 @@ section {
 
 .mb-4
 {
+  font-family: "Raleway" sans-serif;
   color:#fff;
 }
 
