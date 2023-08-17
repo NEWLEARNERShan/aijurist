@@ -151,11 +151,30 @@ section {
   transition-duration: 10;
 }
 
+.btn.btn-outline-white {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn.btn-outline-white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: width 0.6s ease-out;
+}
+
+.btn.btn-outline-white:hover::before {
+  width: 100%;
+}
+
 .btn.btn-outline-white:hover {
-  background: white;
   color: #000000;
-  transition: ease-in;
-  transition-duration: 10;
+  border-color: #000;
 }
 
 .btn.btn-primary {
@@ -174,6 +193,8 @@ section {
 }
 
 .mb-hover::after {
+  border-bottom: 3px;
+  padding-bottom: 3px;
   content: '';
   position: absolute;
   width: 100%;
@@ -668,7 +689,7 @@ h3.text{
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #101c36;
+  color: #000000;
 }
 
 .navbar .dropdown ul a i {
@@ -678,7 +699,11 @@ h3.text{
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #0c0c0c;
+  color: #205fff;
+}
+.navbar .dropdown .active {
+  font-weight: 500;
+  color: #205fff;
 }
 
 .navbar .dropdown:hover>ul {
