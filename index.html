@@ -30,12 +30,6 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'PT Mono';
-      src: url('C:/Users/mamth/Desktop/AI JURIST WEBPAGE/assets/css/PT_Mono/PTMono-Regular.ttf') format('truetype');
-    }
-  </style>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/time1.css">
@@ -108,10 +102,10 @@
             
             <div class="col-lg-8 text-center text-lg-start">
               
-              <h1 class = "m1">Welcome to <span class = "name"> AI Jurist</span></h1>
-              <h2 data-aos="fade-right" data-aos-delay="200">Your AI-powered Legal Advisor</h2>
-              <p class="mb-5" data-aos="fade-right"="200">
-                <span class = "auto-input"></span></p>
+              <h1 class = "m1" data-aos="fade-right" data-aos-delay="200">Welcome to <span class = "name">AI Jurist</span></h1>
+              <h2 data-aos="fade-right" data-aos-delay="200" style="font-size: 30px !important;">Your AI-powered Legal Advisor</h2>
+              <p class="mb-5" data-aos="fade-right"="200" style="margin-top: 20px;">
+                <span class = "auto-input" style="font-size: 22px !important;" data-aos-delay="200s"></span></p>
               <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="https://aijurist.streamlit.app/" target =_blank style = "--clr:#1e9bff" class="btn btn-outline-white"><span>Get started</span></a></p>
            </div>
             <!--<div class="col-lg-4 iphone-wrap">
@@ -145,7 +139,7 @@
                 <i class="bi bi-people black-icon"></i>
               </div>
               <h3 class="mb-3">Explore Your Team</h3>
-              <p style="margin-top: 30px;">Shanthosh S<br>Rakhul Prakash</p>
+              <p>Shanthosh S<br>Rakhul Prakash<br><br><br></p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
@@ -156,7 +150,7 @@
               <h3 class="mb-3">Your Trusted Legal Companion</h3>
               <p> 
                  From legal articles and frequently asked questions to expertly curated 
-                 information and case studies, we strive to empower you with the 
+                 information, we empower you with the 
                  knowledge and confidence to make informed decisions.</p>
             </div>
           </div>
@@ -432,8 +426,8 @@
               'Predicting the chances of winning legal cases with accuracy, finding similar cases, we\'ve got you covered.',
               'The AI Jurist helps you to do all tasks related to judicial activities easily.',
               ' Our intelligent prediction model leverages cutting-edge neural networks to analyze historical court case data, taking jurisdiction into account.',
-              "Ai-Jurist offers text analysis to find similar court cases and provide concise summaries.",
-              'Ai-Jurist can process and analyze a wide range of legal documents, including court cases, statutes, regulations, and legal opinions.',
+              "AI-Jurist offers text analysis to find similar court cases and provide concise summaries.",
+              'AI-Jurist can process and analyze a wide range of legal documents, including court cases, statutes, regulations, and legal opinions.',
               'Experience the future of legal foresight with CourtPredict. Gain a deeper understanding of court case outcomes, unlock the potential of historical data, and elevate your legal decision-making. Explore the possibilities now!'],
               typeSpeed: 50,
               backSpeed: 50,
@@ -442,11 +436,21 @@
 
     })
   </script>
+  <!--<script>
+    var typed = new Typed(".name",{
+      strings:["AI Jurist"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 1000,
+      loop: true
+    })
+  </script>-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 <script>
+
 VANTA.NET({
   el: "#hero.hero-section",
   mouseControls: true,

@@ -98,7 +98,7 @@
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 300;
   margin: 2em 0;
 }
