@@ -252,7 +252,12 @@ section {
   padding-top: 40px;
   box-shadow: 0px 0px 13px 4px rgb(30 30 30);
 }
-
+@media (max-width: 770px) {
+  .feature-1{
+    margin-top: 40px ;
+  }
+  
+}
 .feature-1:hover,
 .feature-1:focus
 {
@@ -283,6 +288,13 @@ section {
 
 .bi.black-icon {
   color: black;
+}
+@media (max-width: 400px) {
+  .popup{
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+  
 }
 /* Popup */
 .popup{
@@ -672,7 +684,7 @@ h3.text{
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.65);
   white-space: nowrap;
   transition: 0.3s;
