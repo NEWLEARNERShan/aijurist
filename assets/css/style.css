@@ -262,7 +262,7 @@ section {
 .feature-1:hover,
 .feature-1:focus
 {
-  box-shadow: 0 0px 11px 5px rgba(91, 91, 91, 0.445);
+  box-shadow: 0 0px 14px 5px rgba(91, 91, 91, 0.445);
   transform: translateY(0.40em);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
