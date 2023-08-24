@@ -997,19 +997,18 @@ h3.text{
   }
 }
 
-.hero-section .iphone-wrap .phone-2,
 .hero-section .iphone-wrap .phone-1 {
   position: absolute;
-  top: -50%;
   overflow: hidden;
-  left: 0;
+  top: -50%;
+  right: calc(0.5% + 10px);
   box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
   border-radius: 30px;
+  height: 500px;
 }
 
 @media screen and (max-width: 992px) {
 
-  .hero-section .iphone-wrap .phone-2,
   .hero-section .iphone-wrap .phone-1 {
     position: relative;
     top: 0;
@@ -1017,29 +1016,14 @@ h3.text{
   }
 }
 
-.hero-section .iphone-wrap .phone-2,
 .hero-section .iphone-wrap .phone-1 {
-  width: 250px;
+  width: 650px;
+  border: 2px solid #205fff;
 }
 
 @media screen and (max-width: 992px) {
   .hero-section .iphone-wrap .phone-1 {
     margin-left: -150px;
-  }
-}
-
-.hero-section .iphone-wrap .phone-2 {
-  margin-top: 50px;
-  margin-left: 100px;
-  width: 250px;
-}
-
-@media screen and (max-width: 992px) {
-  .hero-section .iphone-wrap .phone-2 {
-    width: 250px;
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 100px;
   }
 }
 
@@ -1067,7 +1051,12 @@ h3.text{
   object-fit: cover;
 }
 
-
+/*--------------------------------------------------------------
+#Product
+--------------------------------------------------------------*/
+#gcp:hover{
+  text-decoration: underline blue;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1141,3 +1130,16 @@ h3.text{
 .privacy{
   font-family: 'Oxygen Mono' monospace;
 }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.mb-7{
+  justify-content: left;
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  cursor: default;
+}
+

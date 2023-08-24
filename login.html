@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login - Ai Jurist</title>
+    <title>AI Jurist - Login</title>
     <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -205,9 +205,9 @@ button{
               <li><a href="#">Product</a></li>
               <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Predict Your Case</a></li>
-                  <li><a href="#">API Key</a></li>
-                  <li><a href="#">Waitlist</a></li>
+                  <li><a href="https://aijurist.streamlit.app/" target =_blank>Predict Your Case</a></li>
+                  <li><a href="https://github.com/aijurist/aijurist" target = _blank>GitHub</a></li>
+                  <li><a href="#">Documentation</a></li>
                 </ul>
               </li>
               <li><a href="termscondition.html">Terms and Conditions</a></li>
@@ -238,19 +238,19 @@ button{
                     <h2>Login</h2>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
+                        <input type="email" id="loginEmail" autocomplete="off" required>
                         <label for = "">Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
+                        <input type="password" id="loginPassword" required>
                         <label for ="">Password</label>
                     </div>
                     <div class="forget">
                         <label for=""><input type="checkbox">Remember me? </label>
                         <a href="#" style="margin-left: 10px; color: blue; text-decoration: underline;">Forgot password </a>
                     </div>
-                    <button>Log in</button>
+                    <button onclick="loginUser()">Log in</button>
                     <div class="register">
                         <p>Don't have an account <a href="register page.html" style="font-weight: 300px; text-decoration-line: underline;">Register</a></p>
                     </div>
@@ -261,5 +261,8 @@ button{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>
