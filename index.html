@@ -33,6 +33,29 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/time1.css">
+<style>
+  lottie-player {
+    display: inline-block;
+    transition: transform 0.3s ease-in;
+    width: auto;
+    height: 555px;
+  }
+  lottie-player:hover {
+    transform: translateY(-15px);
+  }
+
+  @media (max-width: 768px) {
+    lottie-player {
+
+      display: block;
+      transition: none;
+      transform: none;
+      width: 150%;
+      margin-left: -40px;
+      height: 100%;
+    }
+  }
+  </style>
 </head>
 
 <body>
@@ -219,7 +242,7 @@
             <p><a href="https://aijurist.streamlit.app/" target =_blank class="btn btn-primary">Check Out</a></p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
-            <img src="assets/img/g8.svg" alt="Image" class="img-fluid">
+            <lottie-player src="assets/Lottie/data-analysis.json" background="transparent"  speed="1" loop autoplay ></lottie-player>
           </div>
         </div>
       </div>
@@ -236,8 +259,8 @@
               Receive timely notifications and reminders, ensuring you never miss a crucial event..</p>
             <p><a href="https://aijurist.streamlit.app/" target =_blank class="btn btn-primary">Check Out</a></p>
           </div>
-          <div class="col-md-6" data-aos="fade-right" style="width: 999;height: 797.25">
-            <img src="assets/img/aiass.svg" alt="Image" class="img-fluid" fill="none">
+          <div class="col-md-6" id = "datasearch" data-aos="fade-right">
+            <lottie-player src="assets/Lottie/Manage.json" background="transparent"  speed="1" loop autoplay></lottie-player>
           </div>
         </div>
       </div>
@@ -446,6 +469,7 @@
       loop: true
     })
   </script>-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
