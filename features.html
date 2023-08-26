@@ -311,6 +311,33 @@
   });
   
   </script>-->
+  <script>
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const lottiePlayer = entry.target.querySelector('lottie-player');
+          if (lottiePlayer) {
+            const animationPath = lottiePlayer.getAttribute('data-src');
+            lottiePlayer.setAttribute('src', animationPath);
+            
+            observer.unobserve(entry.target);
+          }
+        }
+      });
+    }
+  
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+  
+    const observer = new IntersectionObserver(handleIntersection, options);
+  
+    document.querySelectorAll('.col-md-6').forEach(container => {
+      observer.observe(container);
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
