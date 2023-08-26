@@ -503,25 +503,33 @@
   });
 </script>
 <script>
+  function setPointsBasedOnScreenWidth() {
+    const isMobile = window.innerWidth <= 768;
+    
+    const vantaOptions = {
+      el: "#hero.hero-section",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      verticalControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x2332ff,
+      backgroundColor: 0x0,
+      points: isMobile ? 8 : 15,
+      sensitivity: 2.5, 
+      mouseControlsSensitivity: 1.2, 
+      touchControlsSensitivity: 1.2, 
+      gyroControlsSensitivity: 1.2
+    };
 
-VANTA.NET({
-  el: "#hero.hero-section",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: true,
-  verticalControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x2332ff,
-  backgroundColor: 0x0,
-  points: 14.00,
-  sensitivity: 2.5, 
-  mouseControlsSensitivity: 1.2, 
-  touchControlsSensitivity: 1.2, 
-  gyroControlsSensitivity: 1.2
-})
+    VANTA.NET(vantaOptions);
+  }
+
+  setPointsBasedOnScreenWidth();
+  window.addEventListener("resize", setPointsBasedOnScreenWidth);
 </script>
 <!--<script>
 document.addEventListener('DOMContentLoaded', function () {
