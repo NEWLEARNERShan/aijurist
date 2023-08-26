@@ -303,14 +303,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/particlesjs-config.json"></script>
-  <!--<script>
-      particlesJS.load('featuresdesign', 'assets/js/particlesjs-config.json', function() {
-    console.log('particles.js loaded - callback');
-  });
-  
-  </script>-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <script>
     function handleIntersection(entries, observer) {
       entries.forEach(entry => {
@@ -325,37 +319,19 @@
         }
       });
     }
-  
+
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.1
+      threshold: 0.1 
     };
-  
+
     const observer = new IntersectionObserver(handleIntersection, options);
-  
+
     document.querySelectorAll('.col-md-6').forEach(container => {
       observer.observe(container);
     });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
-  <!---- <script>
-    VANTA.TOPOLOGY({
-      el: "#hero1.hero-section.inner-page",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: true,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x2160,
-      backgroundColor: 0x0,
-      sensitivity: 2.5
-    })
-    </script>-->
 </body>
 
 </html>
