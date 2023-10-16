@@ -271,7 +271,7 @@
               Receive timely notifications and reminders, ensuring you never miss a crucial event..</p>
             <p><a href="https://aijurist.streamlit.app/" target =_blank class="btn btn-primary">Check Out</a></p>
           </div>
-          <div class="col-md-6" id = "datasearch" data-aos="fade-right">
+          <div class="col-md-6" id = "datasearch" data-aos="fade-right" style="margin-left: -7%">
             <lottie-player src="assets/Lottie/Manage.json" background="transparent"  speed="1" loop autoplay></lottie-player>
           </div>
         </div>
@@ -470,6 +470,7 @@
               typeSpeed: 40,
               backSpeed: 50,
               backDelay: 2000,
+              startDelay: 4100,
               loop: true
 
     })
@@ -516,8 +517,8 @@
     renderer: "svg",
     loop: true,
     autoplay: true,
-    backgroundColor: "transparent",
-    path: "assets/Lottie/loadin.json",
+    backgroundColor: "black",
+    path: "assets/Lottie/loading1.json",
   });
 
   const hiddenContent = document.querySelector(".hidden-content");
@@ -526,9 +527,9 @@
   setTimeout(function () {
       const loadingContainer = document.getElementById("lottie-container");
       loadingContainer.style.display = "none";
-      document.body.classList.remove("disable-scroll")
+      document.body.classList.add("disable-scroll")
       hiddenContent.style.opacity = "1";
-    }, 6600);
+    }, 4000);
 </script>
 
 
